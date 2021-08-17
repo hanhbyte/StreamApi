@@ -1,0 +1,22 @@
+package com.company.streamApi.interFaceDemo;
+
+public class ChasePaymentProcessor implements PaymentProcessor,PaymentValidator{
+    @Override
+    public void processPayment(PaymentData payment) {
+//        /* String secureToken = ChaseApi.requestSecureTokenForApp();
+//         * initPaymentPage(secureToken, payment.getPaymentAmount);
+//         * ...
+//         */
+    }
+
+    @Override
+    public void someDefaultMethod() {
+        PaymentProcessor.super.someDefaultMethod();
+    }
+
+    @Override
+    public boolean validatePayment(PaymentData payment) {
+        // code to validate payment goes here
+        return false;
+    }
+}
